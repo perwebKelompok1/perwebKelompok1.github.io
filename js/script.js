@@ -24,6 +24,9 @@ $(document).ready(function(){
         $('#menuLogin').html("logout");
         $('#menuSign').hide();
     };
+    $(window).ready(function(){
+        $('.logo').addClass('slide-right');
+    });
     $("#menuLogin").click(function(){
         if(accessCookie("pengguna") != ""){
             document.cookie = "pengguna = ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
